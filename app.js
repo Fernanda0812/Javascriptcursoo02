@@ -16,15 +16,24 @@ function verificarChute() {
        exibirTextoNaTela ('h1', 'Acertou!');
        let mensagemTentativas = "Você descobriu o número secreto com ${tentativas} tentativas!"
        exibirTextoNaTela ('p1', 'Você descobriu o número secreto!');
-   } else {
-       if (chute > numeroSecreto) {
-           exibirTextoNaTela ('p', 'O número secreto ´é menor');
-       } else {
-        exibirtextoNaTela ('p', 'O número secreto é maior');
-       }
-   }
-}
+    exibirTextoNaTela ('p', mensagemTentativas);
+    } else {
+    if (chute > numeroSecreto) {
+        exibirTextoNaTela ('p', 'O múmero secreto é menor');
+    } else {
+        exibirTextoNaTela('p' 'O número secreto é maior');
+    }
 
-function gerarNumeroALeatorio() {
-    return parceInt(Math.random() * 10 + 1);
-}
+
+
+
+
+
+    }
+        
+    
+
+
+   function gerarNumeroALeatorio() {
+     return parseInt(Math.random() * 10 + 1);
+   }

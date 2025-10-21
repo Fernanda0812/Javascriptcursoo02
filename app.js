@@ -22,6 +22,14 @@ function verificarChute() {
         exibirTextoNaTela ('p', 'O múmero secreto é menor');
     } else {
         exibirTextoNaTela('p' 'O número secreto é maior');
+    } else {
+      if (chute > numeroSecreto) {
+
+        } else {
+
+            
+        }
+
     }
 
 

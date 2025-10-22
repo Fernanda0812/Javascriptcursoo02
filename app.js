@@ -14,34 +14,20 @@ function verificarChute() {
    
    if (chute == numeroSecreto) {
        exibirTextoNaTela ('h1', 'Acertou!');
-       let mensagemTentativas = "Você descobriu o número secreto com ${tentativas} tentativas!"
-       exibirTextoNaTela ('p1', 'Você descobriu o número secreto!');
-    exibirTextoNaTela ('p', mensagemTentativas);
-    } else {
-    if (chute > numeroSecreto) {
-        exibirTextoNaTela ('p', 'O múmero secreto é menor');
-    } else {
-        exibirTextoNaTela('p' 'O número secreto é maior');
-    } else {
-      if (chute > numeroSecreto) {
-
-        } else {
-
-            
+       let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+       let mensagemTentativas = "Você descobriu o número secreto com ${tentativas} ${palavraTentativa}!;
+       exibirTextoNaTela ('p', mensagemTentativas);
+     } else {
+       if (chute > numeroSecreto) {
+       exibirTextoNaTela('p', 'O número secreto é menor');
+     } else {
+      exibirTextoNaTela('p', 'O número secreto é maior');
+                        }
         }
-
-    }
-
-
-
-
-
-
-    }
+}
+   
         
     
 
 
-   function gerarNumeroALeatorio() {
-     return parseInt(Math.random() * 10 + 1);
-   }
+   
